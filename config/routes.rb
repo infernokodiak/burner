@@ -60,5 +60,12 @@ Burner::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   resources :calories
+
+  controller :populate do
+    get 'populate/rocky' => :rocky
+    get 'populate/apollo' => :apollo
+    get 'populate/john' => :john
+    get 'populate/manny' => :manny
+  end
   
 end
